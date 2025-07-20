@@ -229,3 +229,31 @@
 .btn-square img {
   vertical-align: middle;
 }
+
+.flashing-text {
+  color: #db7311;
+  font-weight: bold;
+  animation: flash 1s infinite;
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+
+.color-flash {
+  animation: colorFlash 2.5s infinite;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: bold; /* optional */
+}
+
+@keyframes colorFlash {
+  0%   { color: #bbe5a6; }   /* Light green */
+  25%  { color: #00B87B; }   /* Teal (your primary) */
+  50%  { color: #ffffff; }   /* White */
+  75%  { color: #FFD700; }   /* Gold */
+  100% { color: #bbe5a6; }   /* Back to Light green */
+}
+
