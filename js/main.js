@@ -35,6 +35,16 @@
         });
     }
 
+if ($('.typed-text-output-2').length == 1) {
+    var typed_strings_2 = $('.typed-text-2').text();
+    var typed2 = new Typed('.typed-text-output-2', {
+        strings: typed_strings_2.split('0'),
+        typeSpeed: 30,
+        backSpeed: 20,
+        smartBackspace: false,
+        loop: true
+    });
+}
 
     // Smooth scrolling to section
     $(".btn-scroll").on('click', function (event) {

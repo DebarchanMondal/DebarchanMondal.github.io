@@ -241,9 +241,19 @@
   50% { opacity: 0; }
 }
 
+.flashing-para {
+  color: #0ce9def8;
+  font-weight: bold;
+  animation: flash 7s infinite;
+}
+
+@keyframes flash {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
 
 .color-flash {
-  animation: colorFlash 2.5s infinite;
+  animation: colorFlash 10s infinite;
   font-size: 16px;
   font-style: italic;
   font-weight: bold; /* optional */
